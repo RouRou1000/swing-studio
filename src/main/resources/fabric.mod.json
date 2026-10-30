@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "swingstudio",
+  "version": "${version}",
+  "name": "Swing Studio",
+  "description": "Make every swing yours: change speed, motion curve, direction, spins and how each item is held, with 60+ presets and a live in-game editor.",
+  "authors": [
+    "rourou1000"
+  ],
+  "license": "MIT",
+  "icon": "assets/swingstudio/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "dev.swingstudio.SwingStudio"
+    ],
+    "modmenu": [
+      "dev.swingstudio.ModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "swingstudio.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "minecraft": "~26.3",
+    "java": ">=25",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "modmenu": "*"
+  }
+}
